@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Akaya Telivigala', cursive;
+}
+:root{
+   --main-color:rgb(11, 11, 12);
+   --main-bg:red;
+}
+html{
+    font-size: 72.5%;
+    /* //because of this 1 rem=10px  and help in responsive website
+     */
+}
+body{
+    /* height: 100vh; */
+    /* display: flex; */
+    flex-direction: column;
+background-color: black;
+}
+.row{
+    margin: 0% 0%;
+    gap: 0px;
+    /* margin-right: 0px; */
+}
+.menu_main{
+    background-color: var( --main-bg);
+/* width: 100%; */
+}
+
+.menu_main a{
+    color:var( --main-color);
+    font-size: 2rem;
+}
+.menu_header{
+    padding: 34px 0px;
+}
+.main_header_left{
+    padding: 0px;
+}
+.main_header_left p{
+    color: black;
+    font-size: 2rem;
+}
+.main_header_left h1{
+    color: black;
+    font-size: 3.5rem;
+}
+.main_header_left button{
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    /* color: red; */
+    background-color: red;
+}
+.main_header_right{
+    padding: 0px 0px;
+}
+
+.fa-canadian-maple-leaf{
+    transition: all linear;
+    animation: kom 3sec linear infinite;
+}
+@keyframes kom{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        /* transform: 0%{ */
+            transform: rotate(360 deg);
+        }
+    }
+.we{
+    color: cornflowerblue;
+}
+
+/* for weather */
+.inin{
+    font-size: 23px;
+}
+
+.main_content{
+    padding: 0px 0px;
+}
+.temp_form{
+    flex-direction: column;
+    padding: 5px 269px;
+    display: flex;
+}
+#movieName{
+    padding: 8px 9px;
+    background-color: white;
+}
+#SubmitButton{
+    padding: 6px 7px;
+    font-size: 2rem;
+}
+.gap{ 
+    padding: 5px 0px;
+    /* align-items: center; */
+    text-align: center;
+}

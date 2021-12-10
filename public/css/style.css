@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Akaya Telivigala', cursive;
+}
+:root{
+   --main-color:rgb(11, 11, 12);
+   --main-bg:red;
+}
+html{
+    font-size: 72.5%;
+    /* //because of this 1 rem=10px  and help in responsive website
+     */
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    margin: 0% 0%;
+    gap: 0px;
+    /* margin-right: 0px; */
+}
+.menu_main{
+    background-color: var( --main-bg);
+/* width: 100%; */
+}
+
+.menu_main a{
+    color:var( --main-color);
+    font-size: 2rem;
+}
+.menu_header{
+    padding: 34px 0px;
+}
+.main_header_left{
+    padding: 0px;
+}
+.main_header_left p{
+    color: black;
+    font-size: 2rem;
+}
+.main_header_left h1{
+    color: black;
+    font-size: 3.5rem;
+}
+.main_header_left button{
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    /* color: red; */
+    background-color: red;
+}
+.main_header_right{
+    padding: 0px 0px;
+}
+footer{
+    position: fixed;
+    /* left: 0; */
+    bottom: 0;
+    /* width: 100%; */
+    /* background-color: red; */
+    /* color: white; */
+    text-align: center;
+    /* text-align: center; */
+    font-size: 2rem;
+    color: black;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+.fa-canadian-maple-leaf{
+    transition: all linear;
+    animation: kom 3sec linear infinite;
+}
+@keyframes kom{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        /* transform: 0%{ */
+            transform: rotate(360 deg);
+        }
+    }
+.we{
+    color: cornflowerblue;
+}
+
+/* for weather */
+.inin{
+    font-size: 56px;
+}

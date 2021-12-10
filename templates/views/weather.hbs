@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+   <style>
+       body{
+           background-image: url('image/sw.jpg');
+           background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+       }
+   </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>komal</title>
+</head>
+
+<body>
+    {{>navbar}}
+    <!-- <button class="btn btn-danger">komal</button> -->
+
+    <!-- express says make your static file keep it in public and i will run it in sec. -->
+    <div class="comtainer fluid menu_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto inin ">
+
+                <div class="main_content">
+                    <form class="temp_form">
+                        <input type="text" id="cityName" placeholder="enter your city name" placeholder="off">
+                        <input type="button" value="search" id="SubmitButton">
+
+                    </form>
+                </div>
+                <div class="tempinformation">
+                    <div class="top_layer"></div>
+                    <p id="day">DAY</p>
+                    <p id="today_date"> DATE</p>
+                </div>
+                <div class="main_layer">
+                    <p id="city_name"> get output</p>
+                    <div class="middle_layer data_hide">
+                        <p id="temp"><span id="temp1">0</span><sup>o</sup>C</p>
+                        <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>this is
+        <footer></footer>
+        </p>
+    </footer>
+    {{!-- {{>footer}} --}}
+    <script src="js/main.js"></script>
+</body>
+
+</html>
